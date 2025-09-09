@@ -28,7 +28,7 @@
               <li class="contacts__item"><a class="contacts__link" href="tel:+79829090086">8(982)-909-00-86</a></li>
               <li class="contacts__item"><a class="contacts__link" href="tel:+79129990086">8(912)-999-00-86</a></li>
             </ul>
-            <button class="header__callback-btn" type="button">
+            <button class="header__callback-btn" type="button" data-open-modal="modal-callback">
               <svg width="24" height="24" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg><span>Перезвоните мне</span>
@@ -101,45 +101,241 @@
 </svg>
           </div>
         </section>
-        <section class="goods">
+        <section class="goods tabs no-transition-global" data-tabs="parent" data-delay="300">
           <div class="container">
             <h2 class="title-h2 title-h2--goods">Товары</h2>
             <div class="goods__wrap">
-              <ul class="goods__list">
-                <li class="goods__item">
-                  <div class="goods__item-wrap">
-                    <h3 class="title-h3">Модельные чехлы</h3><a class="goods__link" href="#" aria-label="Открыть подробное описание">
+              <div class="tabs__controls" data-tabs="controls">
+                <ul class="goods__list">
+                  <li class="goods__item"><a class="goods__link tabs__control" href="#" data-tabs="control">
+                      <h3 class="title-h3 tabs__title">Модельные чехлы</h3>
                       <div class="goods__picture">
                         <picture>
                           <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
                         </picture>
-                      </div></a>
-                    <p class="goods__price">от 5.500₽</p>
-                  </div>
-                </li>
-                <li class="goods__item">
-                  <div class="goods__item-wrap">
-                    <h3 class="title-h3">Каркасные чехлы</h3><a class="goods__link" href="#" aria-label="Открыть подробное описание">
+                      </div>
+                      <p class="goods__price">от 5.500₽</p></a></li>
+                  <li class="goods__item"><a class="goods__link tabs__control" href="#" data-tabs="control">
+                      <h3 class="title-h3 tabs__title">Каркасные чехлы</h3>
                       <div class="goods__picture">
                         <picture>
                           <source type="image/webp" srcset="img/content/hard-cover-1.webp"><img src="img/content/hard-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
                         </picture>
-                      </div></a>
-                    <p class="goods__price">от 11.500₽</p>
-                  </div>
-                </li>
-                <li class="goods__item">
-                  <div class="goods__item-wrap">
-                    <h3 class="title-h3">Автоковры</h3><a class="goods__link" href="#" aria-label="Открыть подробное описание">
+                      </div>
+                      <p class="goods__price">от 11.500₽</p></a></li>
+                  <li class="goods__item"><a class="goods__link tabs__control" href="#" data-tabs="control">
+                      <h3 class="title-h3 tabs__title">Автоковры</h3>
                       <div class="goods__picture">
                         <picture>
                           <source type="image/webp" srcset="img/content/car-carpet-1.webp"><img src="img/content/car-carpet-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
                         </picture>
-                      </div></a>
-                    <p class="goods__price">*Уточнять стоимость</p>
+                      </div>
+                      <p class="goods__price">*Уточнять стоимость</p></a></li>
+                </ul>
+              </div>
+              <div class="tabs__content goods__content-tab" data-tabs="content">
+                <div class="tabs__element goods__element-tab" data-tabs="element">
+                  <div class="goods__content-box pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                    <div class="goods__content-column">
+                      <div class="goods__content-picture">
+                        <div class="goods__content-picture-link"><a href="../img/content/big-work-1.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                            <picture>
+                              <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                            </picture></a></div>
+                        <div class="goods__content-picture-link"><a href="../img/content/big-work-2.jpg" data-pswp-width="1440" data-pswp-height="1440" target="_blank">
+                            <picture>
+                              <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                            </picture></a></div>
+                      </div>
+                      <div class="goods__content-desc goods__content-desc--align">
+                        <p>
+                          Модельные авточехлы «Lite Comfort» – отличное сочетание стиля,комфорта и доступной цены!
+                          Основные характеристики:
+                          Упрощённые лекала – быстрый 
+                          пошив и привлекательная стоимость.
+                          Материал: экокожа Origon (0,8 мм) – оптимальная 
+                          износостойкость и тактильный комфорт.
+                          Комбинация с алькантарой – можно добавить искусственную 
+                          замшу для более премиального вида.
+                          Выбор цвета – возможность комбинировать
+                          оттенки экокожи на центральных вставках.
+                          2 варианта дизайна:
+                          Горизонтальные полоски (через каждые 8 см),
+                          Одинарная ромбовидная отстрочка.
+                          Гарантия: 6 месяцев.
+                          Стоимость от 5500-8500₽ в зависимости от марки и модели авто 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="goods__content-column">
+                      <div class="goods__content-imgs">
+                        <div class="goods__content-picture">
+                          <div class="goods__content-picture-link"><a href="../img/content/big-work-3.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                              <picture>
+                                <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                              </picture></a></div>
+                          <div class="goods__content-picture-link"><a href="../img/content/big-work-1.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                              <picture>
+                                <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                              </picture></a></div>
+                        </div>
+                      </div>
+                      <div class="goods__content-desc goods__content-desc--order">
+                        <p>
+                          Индивидуальный пошив авточехловТочный крой по лекалам вашего авто — безупречная 
+                          посадка без складок и перекосов.
+                          Учет всех особенностей салона — крепления, 
+                          рельеф сидений, подушки безопасности.
+                          Премиальные материалы на выбор:
+                          Экокожа Origon (1.2 мм) — износостойкость + комфорт
+                          Алькантара — стиль и тактильное удовольствие
+                          Комбинации тканей — создайте уникальный дизайн
+                          20+ вариантов декоративной строчки — от классики до хай-тека
+                          Дополнительные опции:
+                          Вышивка логотипа/инициалов — персонализация под ваш стиль
+                          Усиленные швы + защитные вставки — для повышенной износостойкости
+                          Нестандартные цвета и фактуры — даже металлик или кастом-принты
+                          Стоимость от 11.500-18.000₽ в зависимости от дизайна и 
+                          выбранных опций при пошиве авточехлов.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </li>
-              </ul>
+                </div>
+                <div class="tabs__element" data-tabs="element">
+                  <div class="goods__content-box pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                    <div class="goods__content-column goods__content-column--hard">
+                      <div class="goods__content-picture">
+                        <div class="goods__content-picture-link"><a href="../img/content/big-work-2.jpg" data-pswp-width="1440" data-pswp-height="1440" target="_blank">
+                            <picture>
+                              <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                            </picture></a></div>
+                        <div class="goods__content-picture-link"><a href="../img/content/big-work-3.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                            <picture>
+                              <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                            </picture></a></div>
+                      </div>
+                    </div>
+                    <div class="goods__content-column goods__content-column--hard">
+                      <div class="goods__content-desc goods__content-desc--hard">
+                        <p>
+                          Каркасные авточехлы имеют встроенный спицевый каркас – это современное решение для защиты и тюнинга салона автомобиля.
+                          Они сочетают удобство обычных чехлов с жесткостью и формоудерживающими 
+                          свойствами каркасной конструкции.
+                          Особенности и преимущества: 
+                          Полностью повторяют родной крой и дизайн штатных сидений автомобиля 
+                          Жесткий каркас – встроенные спицы из легкого металла обеспечивают 
+                          сохранение формы, предотвращают провисание и сминание.
+                          Идеальная посадка – такие чехлы плотно облегают сиденья, не образуя 
+                          складок, что улучшает эстетику и комфорт.
+                          Премиальные материалы – только Fiat Nappa и Fiat BMW, Алькантара Italia.
+                          Защита от износа – продлевают срок службы оригинальной обивки, 
+                          защищая от грязи, потертостей и повреждений.
+                          Вентиляция – по желанию заказчика, используем экокожу с перфорацией.
+                          Стильный дизайн – доступны в разных цветах
+                          и материалах (кожзам, ткань, комбинированные варианты).
+                          Стоимость комплекта от 11.000₽ в зависимости от дизайна пошива и выбранных опций.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="goods__content-column goods__content-column--hard">
+                      <div class="goods__content-picture">
+                        <div class="goods__content-picture-link"><a href="../img/content/big-work-1.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                            <picture>
+                              <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                            </picture></a></div>
+                        <div class="goods__content-picture-link"><a href="../img/content/big-work-2.jpg" data-pswp-width="1440" data-pswp-height="1440" target="_blank">
+                            <picture>
+                              <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                            </picture></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__element goods__card-tab-element pswp-gallery pswp-gallery--single-column" data-tabs="element" id="gallery--getting-started">
+                  <div class="goods__content-box goods__content-box--cover">
+                    <h4 class="goods__content-title">5D-ковры</h4>
+                    <div class="goods__content-column">
+                      <div class="goods__content-desc">
+                        <p>
+                          Максимальная защита и стильПовышенная износостойкость 
+                          защита от влаги, грязи, истирания 
+                          и механических повреждений
+                          Анатомическая форма 
+                          точное повторение контуров пола
+                          Цена: от 13 500₽
+                        </p>
+                      </div>
+                    </div>
+                    <div class="goods__content-column goods__content-column--img">
+                      <div class="goods__content-picture">
+                        <div class="goods__content-picture-link"><a href="../img/content/big-work-3.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                            <picture>
+                              <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                            </picture></a></div>
+                        <div class="goods__content-picture-link"><a href="../img/content/big-work-1.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                            <picture>
+                              <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                            </picture></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="goods__content-box goods__content-box--cover">
+                    <h4 class="goods__content-title">Ворсовые ковры </h4>
+                    <div class="goods__content-column">
+                      <div class="goods__content-desc">
+                        <p>
+                          Индивидуальные лекалаМатериалы натуральные и синтетические волокна,
+                          Плотный ворс на резиновой 
+                          термооснове устойчивость
+                          к деформации
+                          Цена: от 10 000₽
+                        </p>
+                      </div>
+                    </div>
+                    <div class="goods__content-column goods__content-column--img">
+                      <div class="goods__content-picture">
+                        <div class="goods__content-picture-link"><a href="../img/content/big-work-2.jpg" data-pswp-width="1440" data-pswp-height="1440" target="_blank">
+                            <picture>
+                              <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                            </picture></a></div>
+                        <div class="goods__content-picture-link"><a href="../img/content/big-work-3.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                            <picture>
+                              <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                            </picture></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="goods__content-box goods__content-box--cover">
+                    <h4 class="goods__content-title">3D-ковры</h4>
+                    <div class="goods__content-column">
+                      <div class="goods__content-desc">
+                        <p>
+                          Материал на выбор EVA (гипоаллергенный)
+                          или ворс (мягкость и комфорт)
+                          Полное соответствие форме 
+                          пола автомобиля
+                          Лёгкий уход устойчивость к
+                          загрязнениям, простота мойки
+                          Цена: от 5 500₽
+                        </p>
+                      </div>
+                    </div>
+                    <div class="goods__content-column goods__content-column--img">
+                      <div class="goods__content-picture">
+                        <div class="goods__content-picture-link"><a href="../img/content/big-work-1.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                            <picture>
+                              <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                            </picture></a></div>
+                        <div class="goods__content-picture-link"><a href="../img/content/big-work-2.jpg" data-pswp-width="1440" data-pswp-height="1440" target="_blank">
+                            <picture>
+                              <source type="image/webp" srcset="img/content/model-cover-1.webp"><img src="img/content/model-cover-1.jpg" width="195" height="235" alt="Кресло в чёрном чехле с центром серого цвета">
+                            </picture></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="goods__mask">
@@ -152,96 +348,60 @@
           <div class="container">
             <h2 class="title-h2 title-h2--works works__title">Примеры работ</h2>
             <div class="swiper">
-              <div class="swiper-wrapper">
+              <div class="swiper-wrapper pswp-gallery pswp-gallery--single-column" id="gallery--our-works">
                 <div class="works__item swiper-slide">
-                  <div class="works__picture">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/work-1.webp"><img src="img/content/work-1.jpg" width="144" height="192" alt="Коричневые авточехлы">
-                    </picture>
-                  </div>
+                  <div class="works__picture"><a href="../img/content/big-work-1.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/work-1.webp"><img src="img/content/work-1.jpg" width="144" height="192" alt="Коричневые авточехлы">
+                      </picture></a></div>
                 </div>
                 <div class="works__item swiper-slide">
-                  <div class="works__picture">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/work-2.webp"><img src="img/content/work-2.jpg" width="144" height="192" alt="Тёмный центр и светлые бока">
-                    </picture>
-                  </div>
+                  <div class="works__picture"><a href="../img/content/big-work-2.jpg" data-pswp-width="1440" data-pswp-height="1440" target="_blank">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/work-2.webp"><img src="img/content/work-2.jpg" width="144" height="192" alt="Тёмный центр и светлые бока">
+                      </picture></a></div>
                 </div>
                 <div class="works__item swiper-slide">
-                  <div class="works__picture">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/work-3.webp"><img src="img/content/work-3.jpg" width="144" height="192" alt="Оранжевй центр, тёмные бока и чёрная подушечка между креслом и подголовником">
-                    </picture>
-                  </div>
+                  <div class="works__picture"><a href="../img/content/big-work-3.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/work-3.webp"><img src="img/content/work-3.jpg" width="144" height="192" alt="Оранжевй центр, тёмные бока и чёрная подушечка между креслом и подголовником">
+                      </picture></a></div>
                 </div>
                 <div class="works__item swiper-slide">
-                  <div class="works__picture">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/work-4.webp"><img src="img/content/work-4.jpg" width="144" height="192" alt="Чёрные чехлы с велюровой вставкой">
-                    </picture>
-                  </div>
+                  <div class="works__picture"><a href="../img/content/big-work-1.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/work-4.webp"><img src="img/content/work-4.jpg" width="144" height="192" alt="Чёрные чехлы с велюровой вставкой">
+                      </picture></a></div>
                 </div>
                 <div class="works__item swiper-slide">
-                  <div class="works__picture">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/work-1.webp"><img src="img/content/work-1.jpg" width="144" height="192" alt="Коричневые авточехлы">
-                    </picture>
-                  </div>
+                  <div class="works__picture"><a href="../img/content/big-work-1.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/work-1.webp"><img src="img/content/work-1.jpg" width="144" height="192" alt="Коричневые авточехлы">
+                      </picture></a></div>
                 </div>
                 <div class="works__item swiper-slide">
-                  <div class="works__picture">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/work-2.webp"><img src="img/content/work-2.jpg" width="144" height="192" alt="Тёмный центр и светлые бока">
-                    </picture>
-                  </div>
+                  <div class="works__picture"><a href="../img/content/big-work-2.jpg" data-pswp-width="1440" data-pswp-height="1440" target="_blank">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/work-2.webp"><img src="img/content/work-2.jpg" width="144" height="192" alt="Тёмный центр и светлые бока">
+                      </picture></a></div>
                 </div>
                 <div class="works__item swiper-slide">
-                  <div class="works__picture">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/work-3.webp"><img src="img/content/work-3.jpg" width="144" height="192" alt="Оранжевй центр, тёмные бока и чёрная подушечка между креслом и подголовником">
-                    </picture>
-                  </div>
+                  <div class="works__picture"><a href="../img/content/big-work-3.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/work-3.webp"><img src="img/content/work-3.jpg" width="144" height="192" alt="Оранжевй центр, тёмные бока и чёрная подушечка между креслом и подголовником">
+                      </picture></a></div>
                 </div>
                 <div class="works__item swiper-slide">
-                  <div class="works__picture">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/work-4.webp"><img src="img/content/work-4.jpg" width="144" height="192" alt="Чёрные чехлы с велюровой вставкой">
-                    </picture>
-                  </div>
-                </div>
-                <div class="works__item swiper-slide">
-                  <div class="works__picture">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/work-1.webp"><img src="img/content/work-1.jpg" width="144" height="192" alt="Коричневые авточехлы">
-                    </picture>
-                  </div>
-                </div>
-                <div class="works__item swiper-slide">
-                  <div class="works__picture">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/work-2.webp"><img src="img/content/work-2.jpg" width="144" height="192" alt="Тёмный центр и светлые бока">
-                    </picture>
-                  </div>
-                </div>
-                <div class="works__item swiper-slide">
-                  <div class="works__picture">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/work-3.webp"><img src="img/content/work-3.jpg" width="144" height="192" alt="Оранжевй центр, тёмные бока и чёрная подушечка между креслом и подголовником">
-                    </picture>
-                  </div>
-                </div>
-                <div class="works__item swiper-slide">
-                  <div class="works__picture">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/work-4.webp"><img src="img/content/work-4.jpg" width="144" height="192" alt="Чёрные чехлы с велюровой вставкой">
-                    </picture>
-                  </div>
+                  <div class="works__picture"><a href="../img/content/big-work-1.jpg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/work-4.webp"><img src="img/content/work-4.jpg" width="144" height="192" alt="Чёрные чехлы с велюровой вставкой">
+                      </picture></a></div>
                 </div>
               </div>
               <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
             </div>
+            <div class="swiper-button-prev works__button-prev"></div>
+            <div class="swiper-button-next works__button-next"></div>
           </div>
         </section>
         <section class="reviews">
@@ -272,7 +432,258 @@
                 <p class="reviews__text">Выбрал у парней хорошие чехлы, что самое кайфовое они сами их установили, где нужно подшили и даже обработали паром чтобы выглядело и ощущалось все не как «резиновое изделие», очень рекомендую ! Парни вы у меня в записной книжке, успехов и развития.</p>
               </li>
             </ul>
-            <button class="reviews__more" type="button">Показать ещё</button>
+            <div class="reviews__box">
+              <div class="accordion" data-accordion="parent" data-single data-close-inner>
+                <div class="accordion__element reviews__element" data-accordion="element">
+                  <button class="reviews__more reviews__more--more" type="button" data-accordion="button">Показать ещё
+                    <svg width="10" height="5" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="accordion__content reviews__content" data-accordion="content">
+                    <div class="accordion__wrapper">
+                      <ul class="reviews__list">
+                        <li class="reviews__item">
+                          <p class="reviews__name">Мастерская Автоковрик</p>
+                          <div class="reviews__raiting">
+                            <p class="reviews__stars"><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span></p>
+                            <p class="reviews__raiting-value">5.0</p>
+                          </div>
+                          <p class="reviews__text">Выбрал у парней хорошие чехлы, что самое кайфовое они сами их установили, где нужно подшили и даже обработали паром чтобы выглядело и ощущалось все не как «резиновое изделие», очень рекомендую ! Парни вы у меня в записной книжке, успехов и развития.</p>
+                        </li>
+                        <li class="reviews__item">
+                          <p class="reviews__name">Алексей Андреев</p>
+                          <div class="reviews__raiting">
+                            <p class="reviews__stars"><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span></p>
+                            <p class="reviews__raiting-value">5.0</p>
+                          </div>
+                          <p class="reviews__text">Выбрал у парней хорошие чехлы, что самое кайфовое они сами их установили, где нужно подшили и даже обработали паром чтобы выглядело и ощущалось все не как «резиновое изделие», очень рекомендую ! Парни вы у меня в записной книжке, успехов и развития.</p>
+                        </li>
+                        <li class="reviews__item">
+                          <p class="reviews__name">Мастерская Автоковрик</p>
+                          <div class="reviews__raiting">
+                            <p class="reviews__stars"><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span></p>
+                            <p class="reviews__raiting-value">5.0</p>
+                          </div>
+                          <p class="reviews__text">Выбрал у парней хорошие чехлы, что самое кайфовое они сами их установили, где нужно подшили и даже обработали паром чтобы выглядело и ощущалось все не как «резиновое изделие», очень рекомендую ! Парни вы у меня в записной книжке, успехов и развития.</p>
+                        </li>
+                        <li class="reviews__item">
+                          <p class="reviews__name">Александр Шевченко</p>
+                          <div class="reviews__raiting">
+                            <p class="reviews__stars"><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span></p>
+                            <p class="reviews__raiting-value">5.0</p>
+                          </div>
+                          <p class="reviews__text">Выбрал у парней хорошие чехлы, что самое кайфовое они сами их установили, где нужно подшили и даже обработали паром чтобы выглядело и ощущалось все не как «резиновое изделие», очень рекомендую ! Парни вы у меня в записной книжке, успехов и развития.</p>
+                        </li>
+                        <li class="reviews__item">
+                          <p class="reviews__name">Даврон Козихонов</p>
+                          <div class="reviews__raiting">
+                            <p class="reviews__stars"><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span></p>
+                            <p class="reviews__raiting-value">5.0</p>
+                          </div>
+                          <p class="reviews__text">Выбрал у парней хорошие чехлы, что самое кайфовое они сами их установили, где нужно подшили и даже обработали паром чтобы выглядело и ощущалось все не как «резиновое изделие», очень рекомендую ! Парни вы у меня в записной книжке, успехов и развития.</p>
+                        </li>
+                        <li class="reviews__item">
+                          <p class="reviews__name">Арабдин Арабиев</p>
+                          <div class="reviews__raiting">
+                            <p class="reviews__stars"><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span></p>
+                            <p class="reviews__raiting-value">5.0</p>
+                          </div>
+                          <p class="reviews__text">Выбрал у парней хорошие чехлы, что самое кайфовое они сами их установили, где нужно подшили и даже обработали паром чтобы выглядело и ощущалось все не как «резиновое изделие», очень рекомендую ! Парни вы у меня в записной книжке, успехов и развития.</p>
+                        </li>
+                        <li class="reviews__item">
+                          <p class="reviews__name">Андрей Резник</p>
+                          <div class="reviews__raiting">
+                            <p class="reviews__stars"><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span></p>
+                            <p class="reviews__raiting-value">5.0</p>
+                          </div>
+                          <p class="reviews__text">Выбрал у парней хорошие чехлы, что самое кайфовое они сами их установили, где нужно подшили и даже обработали паром чтобы выглядело и ощущалось все не как «резиновое изделие», очень рекомендую ! Парни вы у меня в записной книжке, успехов и развития.</p>
+                        </li>
+                        <li class="reviews__item">
+                          <p class="reviews__name">Мария Чайковская</p>
+                          <div class="reviews__raiting">
+                            <p class="reviews__stars"><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span></p>
+                            <p class="reviews__raiting-value">5.0</p>
+                          </div>
+                          <p class="reviews__text">Выбрал у парней хорошие чехлы, что самое кайфовое они сами их установили, где нужно подшили и даже обработали паром чтобы выглядело и ощущалось все не как «резиновое изделие», очень рекомендую ! Парни вы у меня в записной книжке, успехов и развития.</p>
+                        </li>
+                        <li class="reviews__item">
+                          <p class="reviews__name">Александр Арслан</p>
+                          <div class="reviews__raiting">
+                            <p class="reviews__stars"><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span></p>
+                            <p class="reviews__raiting-value">5.0</p>
+                          </div>
+                          <p class="reviews__text">Выбрал у парней хорошие чехлы, что самое кайфовое они сами их установили, где нужно подшили и даже обработали паром чтобы выглядело и ощущалось все не как «резиновое изделие», очень рекомендую ! Парни вы у меня в записной книжке, успехов и развития.</p>
+                        </li>
+                        <li class="reviews__item">
+                          <p class="reviews__name">Милана Миллер</p>
+                          <div class="reviews__raiting">
+                            <p class="reviews__stars"><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span><span class="reviews__star">
+                                <svg width="15" height="15" aria-hidden="true">
+                                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg></span></p>
+                            <p class="reviews__raiting-value">5.0</p>
+                          </div>
+                          <p class="reviews__text">Выбрал у парней хорошие чехлы, что самое кайфовое они сами их установили, где нужно подшили и даже обработали паром чтобы выглядело и ощущалось все не как «резиновое изделие», очень рекомендую ! Парни вы у меня в записной книжке, успехов и развития.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="reviews__more reviews__more--less" type="button" data-accordion="button">Скрыть
+                    <svg width="10" height="5" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section class="faq">
@@ -314,73 +725,169 @@
                   </div>
                 </li>
               </ul>
-              <button class="faq__more" type="button">Показать ещё</button>
-            </div>
-            <div class="faq__box"> 
-              <h3 class="faq__title">Об оплате</h3>
-              <ul class="faq__list">
-                <li class="faq__item">
-                  <div class="accordion" data-accordion="parent" data-single data-close-inner>
-                    <div class="accordion__element faq__element" data-accordion="element">
-                      <button class="accordion__button faq__btn" type="button" data-accordion="button">Как производится оплата?
-                        <svg width="10" height="5" aria-hidden="true">
-                          <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
-                        </svg>
-                      </button>
-                      <div class="accordion__content" data-accordion="content">
-                        <div class="accordion__wrapper faq__text">
-                          <p>Оплата картой или наличными возможна только в студии по адресу: г.Тюмень, ул. Пржевальского, д. 36, стр.1, 5 бокс. Для удаленного способа оплаты - QR-код.</p>
+              <div class="faq__all-questions">
+                <div class="accordion" data-accordion="parent" data-single data-close-inner>
+                  <div class="accordion__element faq__all-element" data-accordion="element">
+                    <button class="faq__more faq__more--more" type="button" data-accordion="button">Показать ещё
+                      <svg width="10" height="5" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
+                      </svg>
+                    </button>
+                    <div class="accordion__content reviews__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <div class="faq__box"> 
+                          <h3 class="faq__title">Об оплате</h3>
+                          <ul class="faq__list">
+                            <li class="faq__item">
+                              <div class="accordion" data-accordion="parent" data-single data-close-inner>
+                                <div class="accordion__element faq__element" data-accordion="element">
+                                  <button class="accordion__button faq__btn" type="button" data-accordion="button">Как производится оплата?
+                                    <svg width="10" height="5" aria-hidden="true">
+                                      <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
+                                    </svg>
+                                  </button>
+                                  <div class="accordion__content" data-accordion="content">
+                                    <div class="accordion__wrapper faq__text">
+                                      <p>Рекомендуем использовать средства для ухода за кожей и искусственной кожей, чтобы сохранить первоначальное состояние и увеличить срок службы авточехлов. Наносить средство на губку или салфетку из микрофибры и посредством втирания, довести до сухости. Ни в коем случае не стирать авточехлы в бытовой стиральной машине.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="faq__box"> 
+                          <h3 class="faq__title">О гарантии </h3>
+                          <ul class="faq__list">
+                            <li class="faq__item">
+                              <div class="accordion" data-accordion="parent" data-single data-close-inner>
+                                <div class="accordion__element faq__element" data-accordion="element">
+                                  <button class="accordion__button faq__btn" type="button" data-accordion="button">Есть ли гарантия?
+                                    <svg width="10" height="5" aria-hidden="true">
+                                      <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
+                                    </svg>
+                                  </button>
+                                  <div class="accordion__content" data-accordion="content">
+                                    <div class="accordion__wrapper faq__text">
+                                      <p>Если вы оформляете  заказ в нашей компании, укажите, что нужна установка чехлов нашими специалистами. При подтверждении заказа менеджер согласует день и время и запишет Вас на установку. Если Вы обращаетесь к нам за установкой уже купленного комплекта авточехлов, укажите номер телефона, специалисты свяжутся с Вами для согласования дня и времени установки.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="faq__box"> 
+                          <h3 class="faq__title">Сроки</h3>
+                          <ul class="faq__list">
+                            <li class="faq__item">
+                              <div class="accordion" data-accordion="parent" data-single data-close-inner>
+                                <div class="accordion__element faq__element" data-accordion="element">
+                                  <button class="accordion__button faq__btn" type="button" data-accordion="button">Какие сроки готовности авточехлов?
+                                    <svg width="10" height="5" aria-hidden="true">
+                                      <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
+                                    </svg>
+                                  </button>
+                                  <div class="accordion__content" data-accordion="content">
+                                    <div class="accordion__wrapper faq__text">
+                                      <p>Изготовление авточехлов занимает порядка от 5 до 30 календарных дней в зависимости от типа авточехлов.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="faq__item">
+                              <div class="accordion" data-accordion="parent" data-single data-close-inner>
+                                <div class="accordion__element faq__element" data-accordion="element">
+                                  <button class="accordion__button faq__btn" type="button" data-accordion="button">Какие сроки готовности автоковриков?
+                                    <svg width="10" height="5" aria-hidden="true">
+                                      <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
+                                    </svg>
+                                  </button>
+                                  <div class="accordion__content" data-accordion="content">
+                                    <div class="accordion__wrapper faq__text">
+                                      <p>Готовность ковриков EVA 3D, Ворс 3D и Премиум Ворс в течении 2-3 рабочих дней. Изготовление ковриков 5D из экокожи занимает порядка до 14 календарных дней.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="faq__box"> 
+                          <h3 class="faq__title">Уход</h3>
+                          <ul class="faq__list">
+                            <li class="faq__item">
+                              <div class="accordion" data-accordion="parent" data-single data-close-inner>
+                                <div class="accordion__element faq__element" data-accordion="element">
+                                  <button class="accordion__button faq__btn" type="button" data-accordion="button">Как осущ. уход за авточехлами?
+                                    <svg width="10" height="5" aria-hidden="true">
+                                      <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
+                                    </svg>
+                                  </button>
+                                  <div class="accordion__content" data-accordion="content">
+                                    <div class="accordion__wrapper faq__text">
+                                      <p>Рекомендуем использовать средства для ухода за кожей и искусственной кожей, чтобы сохранить первоначальное состояние и увеличить срок службы авточехлов. Наносить средство на губку или салфетку из микрофибры и посредством втирания, довести до сухости. Ни в коем случае не стирать авточехлы в бытовой стиральной машине.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="faq__box"> 
+                          <h3 class="faq__title">Услуги</h3>
+                          <ul class="faq__list">
+                            <li class="faq__item">
+                              <div class="accordion" data-accordion="parent" data-single data-close-inner>
+                                <div class="accordion__element faq__element" data-accordion="element">
+                                  <button class="accordion__button faq__btn" type="button" data-accordion="button">Как сделать заказ?
+                                    <svg width="10" height="5" aria-hidden="true">
+                                      <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
+                                    </svg>
+                                  </button>
+                                  <div class="accordion__content" data-accordion="content">
+                                    <div class="accordion__wrapper faq__text">
+                                      <p>Рекомендуем использовать средства для ухода за кожей и искусственной кожей, чтобы сохранить первоначальное состояние и увеличить срок службы авточехлов. Наносить средство на губку или салфетку из микрофибры и посредством втирания, довести до сухости. Ни в коем случае не стирать авточехлы в бытовой стиральной машине.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="faq__item">
+                              <div class="accordion" data-accordion="parent" data-single data-close-inner>
+                                <div class="accordion__element faq__element" data-accordion="element">
+                                  <button class="accordion__button faq__btn" type="button" data-accordion="button">Есть ли услуга установки авточехлов?
+                                    <svg width="10" height="5" aria-hidden="true">
+                                      <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
+                                    </svg>
+                                  </button>
+                                  <div class="accordion__content" data-accordion="content">
+                                    <div class="accordion__wrapper faq__text">
+                                      <p>Рекомендуем использовать средства для ухода за кожей и искусственной кожей, чтобы сохранить первоначальное состояние и увеличить срок службы авточехлов. Наносить средство на губку или салфетку из микрофибры и посредством втирания, довести до сухости. Ни в коем случае не стирать авточехлы в бытовой стиральной машине.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
+                    <button class="faq__more faq__more--less" type="button" data-accordion="button">Скрыть
+                      <svg width="10" height="5" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
+                      </svg>
+                    </button>
                   </div>
-                </li>
-              </ul>
-              <button class="faq__more" type="button">Показать ещё</button>
-            </div>
-            <div class="faq__box"> 
-              <h3 class="faq__title">Сроки</h3>
-              <ul class="faq__list">
-                <li class="faq__item">
-                  <div class="accordion" data-accordion="parent" data-single data-close-inner>
-                    <div class="accordion__element faq__element" data-accordion="element">
-                      <button class="accordion__button faq__btn" type="button" data-accordion="button">Какие сроки готовности авточехлов?
-                        <svg width="10" height="5" aria-hidden="true">
-                          <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
-                        </svg>
-                      </button>
-                      <div class="accordion__content" data-accordion="content">
-                        <div class="accordion__wrapper faq__text">
-                          <p>Изготовление авточехлов занимает порядка от 5 до 30 календарных дней в зависимости от типа авточехлов.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="faq__item">
-                  <div class="accordion" data-accordion="parent" data-single data-close-inner>
-                    <div class="accordion__element faq__element" data-accordion="element">
-                      <button class="accordion__button faq__btn" type="button" data-accordion="button">Какие сроки готовности автоковриков?
-                        <svg width="10" height="5" aria-hidden="true">
-                          <use xlink:href="img/sprite.svg#icon-faq-down-arrow"></use>
-                        </svg>
-                      </button>
-                      <div class="accordion__content" data-accordion="content">
-                        <div class="accordion__wrapper faq__text">
-                          <p>Готовность ковриков EVA 3D, Ворс 3D и Премиум Ворс в течении 2-3 рабочих дней. Изготовление ковриков 5D из экокожи занимает порядка до 14 календарных дней.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <button class="faq__more" type="button">Показать ещё</button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
         <section class="map">
           <h2 class="visually-hidden">Наша студия пошива чехлов находиться в г. Тюмень, по адресу ул. Пржевальского, 36 ст1, 5 бокс</h2>
-          <div class="contacts__mapbox" data-mapbox data-map-center-coord-x="57.139946" data-map-center-coord-y="65.585954" data-pin-coord-x="57.139346" data-pin-coord-y="65.585954" data-zoom="17" data-map-pin="img/svg/map-pin.svg" data-width="66" data-height="101" data-alt="" data-header="Студия пошива авточехлов" data-body="г.Тюмень" data-footer="Пржевальского, 36 ст1, 5 бокс, г. Тюмень"></div>
+          <div class="contacts__mapbox" data-mapbox data-map-center-coord-x="57.139946" data-map-center-coord-y="65.585954" data-pin-coord-x="57.139346" data-pin-coord-y="65.585954" data-zoom="17" data-map-pin="img/svg/map-pin.svg" data-width="66" data-height="101" data-alt="" data-header="Студия пошива авточехлов" data-body="г.Тюмень" data-footer="Пржевальского, 36 ст1, 5 бокс"></div>
         </section>
       </main>
       <footer class="footer">
@@ -405,7 +912,7 @@
                   </svg><a class="footer__contacts-link" href="mailto:+79829090086">Crown_auto72@mail.ru</a>
                 </li>
               </ul>
-              <button class="footer__callback" type="button">Задать вопрос</button>
+              <button class="footer__callback" type="button" data-open-modal="modal-callback">Задать вопрос</button>
             </div>
             <div class="footer__social">
               <ul class="footer__social-list">
@@ -418,6 +925,55 @@
         </div>
       </footer>
     </div>
+    <section class="modal modal--preload" data-modal="modal-callback">
+      <h2 class="visually-hidden">Модальное окно обратной связи</h2>
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <section class="callback">
+            <h2 class="subtitle">Свяжитесь с <span>нами</span></h2>
+            <div class="callback__form" data-form-validate data-callback="base">
+              <form method="post">
+                <div class="callback__row custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <div class="field-contain">
+                    <div class="field-contain__wrap">
+                      <input class="field-contain__input" id="name" type="text" name="name">
+                      <label class="field-contain__placeholder-text" for="name">
+                        <div class="field-contain__text">Введите свое имя</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="callback__row custom-input" data-validate-type="text" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <div class="field-contain">
+                    <div class="field-contain__wrap">
+                      <input class="field-contain__input" id="carmodel" type="text" name="carmodel">
+                      <label class="field-contain__placeholder-text" for="carmodel">
+                        <div class="field-contain__text">Введите марку своего автомобиля</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="callback__row custom-input" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required>
+                  <div class="field-contain">
+                    <div class="field-contain__wrap">
+                      <input class="field-contain__input" id="phone" type="text" name="phone">
+                      <label class="field-contain__placeholder-text" for="phone">
+                        <div class="field-contain__text">Введите свой номер телефона</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="callback__action">
+                  <button class="callback__btn" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </section>
+          <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal data-focus>X</button>
+        </div>
+      </div>
+    </section>
     <script src="https://api-maps.yandex.ru/v3/?apikey=44c2d6f7-48e3-4089-894e-b8863ee921f1&amp;lang=ru_RU" defer></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
